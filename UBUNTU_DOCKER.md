@@ -30,3 +30,18 @@ import sys
 sys.path.append('/usr/local/lib/python3.7/site-packages/')
 ```
 
+Install GIT
+
+```
+apt update 
+
+apt install -y git
+```
+
+Clone Repository
+```
+git clone --branch ubuntu_docker https://github.com/ErivanDev/OnePose.git
+
+cd OnePose
+```
+
