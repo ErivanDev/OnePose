@@ -112,6 +112,13 @@ def import_matches(image_ids, database_path, pairs_path, matches_path, feature_p
             db.add_two_view_geometry(id0, id1, matches)
     
     match_file.close()
+
+    rows = db.execute("SELECT COUNT(pair_id) FROM matches") 
+
+    logging.info("-----------MATCHES ROWs----------------")
+    logging.info(rows)
+    logging.info("-----------MATCHES ROWs----------------")
+
     db.commit()
     db.close()
 
