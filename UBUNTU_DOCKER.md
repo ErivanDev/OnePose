@@ -93,3 +93,21 @@ cd data && mkdir model && cd model && mkdir checkpoints && cd checkpoints && mkd
 
 curl 'https://doc-10-08-docs.googleusercontent.com/docs/securesc/fs7fojejdi5pbqjmt1f8pm10a0alg2r6/vhhh9okt8jloi5f1abmtjtgepgioe7rg/1665500775000/04711227087226966112/16214063562506460016/1GvpVzcm-ixqOAL-JyyTHRK3Fsq6ynWGS?e=download&ax=ALW9-sCIsVW3UnbHorYYyIAv-3mLMvZPRVhWrcs6_bnDMvw4VKndRrvb83F5CRXLIc4zI7J2iPyFgx2awjm3tKjHZzrhkt9rGT794i4CKb5cXz8poZ0L_FU0s_4pgaNTZSivBleQgFCFrWQWl7BIjzo734UwYhwTJOnTYM6NmE9sne8KDUpTbCfSGODBoDuFxX9H0pjmKKjXnmClJ-mkrAL1p7klutDKtH2AIFzaSF952ehQkKpVe5zqZr-NZ6vIXVaHq2-KEre_sBxbu_QQgItMhY-OnpJS5QosXmj9ENmWHCi1pXcdTwEvXcd2vp43mLRdWUKk_9oxN6CIfebZQ_M7AHyPWsaKN8SeRoCUmGiMiXJmQ-192_YRRg84JrzibYx-EZDFMwyKrpZ4X45SvQR06xnRH9yAP_c37GzngWnF3cr3DdjkfPAwx6GEoPenvCZrYuy0ywYvuirjLiAWOytfSetG2KrGcpdN1XH1Yglq10Eg1tg-3fTWb6BkC78sxWA-JJuSMD11X0TOd1dfhgZJFGVIDoEU69TQcORoy-LpN8kl2R3tsROVTYP87DquM-CIfoSacGfl8Ufyx5g3TwXEs7_05_OJWOjOmikuLoVV0LmLrQCASDZRHUwfUsYxCEjVqNUH1Ksa3iHkqO6ATN6pKM_UP9XXLu_Vm28ujmoSYPLH6X8xr_QTQJB1JeBm-Hhpoe_dUYCcYzO2GUiDPjB24dqRXMJ5h3y95qH5zKPIDuAba1cnKTHcvSwnFl2azv6roFz3RO4tifY1lDJ80YS10xXkt2VY5oK_ecy2x3uouVovj4SZgETD4tren8OKrOclzderhk5LvMk7BzxSXOcbxmuGXvESm0vI9hQi-Qg2X-nvNx_ljByJXrZQU8o_UszI6WfBBPuSKjvfZdVz0_7lj7WtDnaTGxs&uuid=a1227527-1f42-4a2c-ac90-506e8029e5d5&authuser=0' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' -H 'Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3' -H 'Accept-Encoding: gzip, deflate, br' -H 'Alt-Used: doc-10-08-docs.googleusercontent.com' -H 'Connection: keep-alive' -H 'Cookie: AUTH_a1t9luhuq9o5p1sfd5o753a0m3sk1gru=16214063562506460016|1665500700000|sv9q1vmmuc8ko0s4csj3b97r8aiamh83' -H 'Upgrade-Insecure-Requests: 1' -H 'Sec-Fetch-Dest: iframe' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: cross-site' -H 'TE: trailers' --output GATsSPG.ckpt
 ```
+
+Run Script
+
+```
+cd ../../../..
+
+eval "$(conda shell.bash hook)"
+
+conda activate onepose
+
+REPO_ROOT=../OnePose
+
+cd $REPO_ROOT
+
+python --version
+
+
+```
