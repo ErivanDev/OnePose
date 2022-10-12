@@ -122,8 +122,10 @@ def run_triangulation(colmap_path, model_path, database_path, image_dir, empty_m
         str(colmap_path), 'point_triangulator',
         '--database_path', str(database_path),
         '--image_path', str(image_dir),
-        '--input_path', str(empty_model),
-        '--output_path', str(model_path),
+        #'--input_path', str(empty_model),
+        #'--output_path', str(model_path),
+        '--import_path', str(empty_model),
+        '--export_path', str(model_path),
         '--Mapper.ba_refine_focal_length', '0',
         '--Mapper.ba_refine_principal_point', '0',
         '--Mapper.ba_refine_extra_params', '0'
