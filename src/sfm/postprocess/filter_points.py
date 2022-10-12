@@ -3,7 +3,7 @@ import torch
 import numpy as np
 import os.path as osp
 from src.utils.colmap import read_write_model 
-
+import logging
 
 def filter_by_track_length(points3D, track_length):
     """ 
@@ -73,7 +73,7 @@ def filter_by_3d_box(points, points_idxs, box_path):
 
 
 def filter_3d(model_path, track_length, box_path):
-    print("what sup")
+    logging.info('what sup')
 
     """ Filter 3d points by tracke length and 3d box """
     points_model_path = osp.join(model_path, 'points3D.bin')
