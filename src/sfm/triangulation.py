@@ -103,6 +103,8 @@ def import_matches(image_ids, database_path, pairs_path, matches_path, feature_p
 
         matches = np.stack([np.where(valid)[0], matches[valid]], -1)
 
+        logging.info(matches)
+
         db.add_matches(id0, id1, matches)
         matched |= {(id0, id1), (id1, id0)}
 
