@@ -73,6 +73,8 @@ def filter_by_3d_box(points, points_idxs, box_path):
 
 
 def filter_3d(model_path, track_length, box_path):
+    print("what sup")
+
     """ Filter 3d points by tracke length and 3d box """
     points_model_path = osp.join(model_path, 'points3D.bin')
     points3D = read_write_model.read_points3d_binary(points_model_path)
