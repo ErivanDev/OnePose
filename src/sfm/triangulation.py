@@ -116,7 +116,7 @@ def import_matches(image_ids, database_path, pairs_path, matches_path, feature_p
     rows = db.execute("SELECT COUNT(pair_id) FROM matches") 
 
     logging.info("-----------MATCHES ROWs----------------")
-    logging.info(rows)
+    logging.info(rows.fetchone()[0])
     logging.info("-----------MATCHES ROWs----------------")
 
     db.commit()
