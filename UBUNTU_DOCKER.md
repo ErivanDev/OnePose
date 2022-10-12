@@ -30,18 +30,25 @@ import sys
 sys.path.append('/usr/local/lib/python3.7/site-packages/')
 ```
 
-Install GIT
+Install GIT and GCC
 
 ```
 apt update 
 
-apt install -y git
+apt install -y git gcc
 ```
 
 Clone Repository
+
 ```
 git clone --branch ubuntu_docker https://github.com/ErivanDev/OnePose.git
 
 cd OnePose
+```
+
+Create ENV
+
+```
+conda env create -f environment.yaml
 ```
 
