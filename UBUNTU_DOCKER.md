@@ -111,3 +111,8 @@ python --version
 
 
 ```
+
+Test Colmap point_triangulator
+```
+colmap point_triangulator --database_path /root/OnePose/data/sfm_model/0408-colorbox-box/outputs_superpoint_superglue/sfm_ws/database.db --image_path / --import_path /root/OnePose/data/sfm_model/0408-colorbox-box/outputs_superpoint_superglue/sfm_empty --export_path /root/OnePose/data/sfm_model/0408-colorbox-box/outputs_superpoint_superglue/sfm_ws/model --Mapper.ba_refine_focal_length 0 --Mapper.ba_refine_principal_point 0 --Mapper.ba_refine_extra_params 0
+```
