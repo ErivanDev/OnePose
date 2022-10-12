@@ -24,7 +24,7 @@ def geometric_verification(colmap_path, database_path, pairs_path):
         '--match_list_path', str(pairs_path),
         '--match_type', 'pairs'
     ]
-    ret = subprocess.call(cmd)
+    ret = subprocess.call(cmd, shell=True)
     if ret != 0:
         logging.warning('Problem with matches_importer, existing.')
         exit(ret)
