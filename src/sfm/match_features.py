@@ -64,6 +64,8 @@ def spg(cfg, feature_path, covis_pairs, matches_out, vis_match=False):
         data['image1'] = torch.empty((1, 1, ) + tuple(feats1['image_size'])[::-1])
         pred = model(data)
 
+        logging.info(pred)
+
         grp = match_file.create_group(pair)
         matches0 = pred['matches0'][0].cpu().short().numpy()
         grp.create_dataset('matches0', data=matches0)
